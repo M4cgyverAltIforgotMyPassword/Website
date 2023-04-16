@@ -6,6 +6,9 @@ import Providers from "@/components/redux/provider";
 import TitleSet from '@/components/website/titleSet';
 import { store } from '@/components/redux';
 import { setTitle } from '@/components/website/titleSlice';
+import GitChanges from '@/components/website/gitChanges';
+import Window95 from '@/components/website/window95';
+import Paper from '@/components/website/sheet';
 
 export const metadata: Metadata = {
   title:        'M4cgyvers Repurposed Mining Rig. ',
@@ -35,7 +38,6 @@ export default function Homepage() {
         </Providers>
 
         <main className={styles.homepage}>
-          
 
           <p hidden> I put this shit in chatgtp lmao</p> 
 
@@ -59,6 +61,15 @@ export default function Homepage() {
             <p>Honestly thats about it. Ill be posting blog updates on locations, tips, projects, and games. Anyone else that posts more than that on the internet has really bad opsec, bad with personal data, or has pronouns in their bio.</p>
           </div>
 
+          <br/>
+
+          <Window95 title="Change Log" style={{width:"600px"}}>           
+            <div style={{height:"400px", overflowY:"scroll", overflowX:"hidden"}}>
+              <Paper title="Updates the the Website!">
+                <GitChanges />
+              </Paper>
+            </div>
+          </Window95>
         </main>
       </>
     )

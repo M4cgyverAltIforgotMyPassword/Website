@@ -1,0 +1,36 @@
+.card {
+    font-family: Courier, monospace;
+    background-color: white;
+    background: repeating-linear-gradient(
+      white,
+      white 25px,
+      #9198e5 26px,
+      #9198e5 27px
+    );
+    background-position-y: 34px;
+    height: 100%;
+    width: 100%; 
+}
+  
+.card header {
+    background: linear-gradient(white, white 33px, pink 35px, pink 36px);
+    height: 36px;
+}
+  
+.cardTitle {
+    position: relative;
+    left: 10px;
+    top: 8px;
+    font-size: 30px;
+    font-weight: bold;
+}
+  
+.cardText {
+    position: relative;
+    left: 10px;
+    top: 30px;
+    font-size: 16px;
+    margin: 0 20px;
+    line-height: 27px;
+    height: 100%;
+}

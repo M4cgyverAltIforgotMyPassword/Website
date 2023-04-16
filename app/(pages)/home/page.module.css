@@ -2,9 +2,10 @@
     position: relative;
     top: 0;
     left: 0;
-    padding: 4px;
-    padding-top: 0;
+    padding: .8%;
     background-color: antiquewhite;
+
+    font-smooth: never;
 }
 
 .homepage h1 {
@@ -17,7 +18,7 @@
 }
 
 .homepage p {
-    font-size: 1.1em;
+    font-size: 17px;
     font-family: "EagleSpCGA_Alt2-2y", monospace;
     padding: 0;
     margin: 0;
@@ -25,4 +26,37 @@
 
 .homepage img {
     image-rendering: auto;
+}
+ 
+/* Styling specific to a sheet of lined paper */
+.changelog{
+    font-family: 'Indie Flower', cursive;
+    background-color: white;
+    background: repeating-linear-gradient(white, white 25px, #9198e5 26px, #9198e5 27px);
+    background-position-y: 49px;
+    height: 550px;
+    width: 450px;
+    padding: 0; 
+}
+
+.changelog header {
+    background: linear-gradient(white, white 33px, pink 35px, pink 36px);
+    height: 36px;
+}
+
+.changelog .title {
+    position: relative;
+    top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.changelog-text {
+    position: relative;
+    top: 33px;
+    font-size: 22px;
+    width: 480px;
+    margin: 0 55px;
+    line-height: 27px;
 }
