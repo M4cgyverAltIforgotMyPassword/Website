@@ -72,6 +72,7 @@ export default async function GitChanges() {
                             </li>
                         ))}
                     </ul>
+                    <br/>
                 </div>
             ))}
         </div>
