@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'ToshibaTxL1';
+    src: url('/static/fonts/WebPlus_ToshibaTxL1_8x16.woff') format('woff'),
+         url('/static/fonts/MxPlus_ToshibaTxL1_8x16.ttf') format('truetype'),
+         url('/static/fonts/Bm437_ToshibaTxL1_8x16.FON') format('embedded-opentype');
+  }
+  

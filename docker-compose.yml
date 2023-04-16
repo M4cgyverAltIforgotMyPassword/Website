@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:latest
+    restart: always
+    environment:
+      # To connect to the PostgreSQL database run the following command
+      # psql -h localhost -p 2345 -U admin -d mydb
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=website 
+    ports:
+      - 5432:5432
+    volumes:
+      # Pass volume named mysql-data to mysql container
+      - ./database/data:/var/lib/postgresql/data
+
+  node:
+    image: node:latest
+    depends_on:
+      - db
+    volumes:
+      - ./:/app
+    working_dir: /app 
+    ports:
+      - "3000:3000"
+    command: "yarn dev"
+
+# Add volumes definition to create volume mysql-data referenced above
+volumes:
+  postgresql-data:
+    driver: cio
+    driver_opts:
+      profile: "POSTGRESQL"
+
+# mabey not use a bridge with the current state of next
+networks:
+  postgres-network:
+    driver: bridge

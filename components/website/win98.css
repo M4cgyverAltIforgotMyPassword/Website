@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'ToshibaTxL1';
+    src: url('/static/fonts/WebPlus_ToshibaTxL1_8x16.woff') format('woff'),
+         url('/static/fonts/MxPlus_ToshibaTxL1_8x16.ttf') format('truetype'),
+         url('/static/fonts/Bm437_ToshibaTxL1_8x16.FON') format('embedded-opentype');
+}
+
+  
+.win98-window {
+    background: rgba(229, 247, 253, 0.726);
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+    padding: 3px;
+    padding-bottom: 0px;
+}
+
+.win98-window .title {
+    align-items: center;
+    color:silver;
+    background: linear-gradient(to left, #1084d0, #1084d0 2vw, navy 7.5vw, navy );
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 2px 3px 3px;
+    padding-left: 0px;
+    font-size: min(1.35vw, 1.5vh);
+    position: relative;
+    z-index: 2;
+}
+
+.win98-window .title::after {
+    content: "X";
+    color: silver;
+    font-size: .1vw;
+    font-weight: bold;
+    margin-left: -10px;
+    margin-top: -6px;
+    margin-bottom: -6px;
+    margin-right: .35vw;
+    cursor: pointer;
+    font-size: medium;
+  }
+  
+
+.win98-window .title p{
+    font-size: min(1.25vw, 1.5vh);
+    font-family:'ToshibaTxL1', monospace;
+    margin: 0;
+    margin-left: 3px;
+    padding: 0;
+} 

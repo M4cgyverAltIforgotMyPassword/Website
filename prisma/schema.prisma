@@ -1,0 +1,28 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Comments {
+  id          Int      @id @default(autoincrement())
+  name        String   @db.VarChar(16)
+  comment     String
+  createdAt   DateTime @default(now())
+  visible     Boolean  @default(true) // add new field called 'visible'
+  documentId  Int
+  @@index([documentId], name: "document_idx")
+}
+
+model Views {
+  id Int @id @default(autoincrement())
+  sessionId String
+  path String
+  datetime DateTime @default(now())
+
+  @@index([path])
+  @@unique([sessionId, path], name: "sessionId_path")
+}

@@ -1,0 +1,4 @@
+time="2023-04-13T07:20:00-07:00" level=warning msg="Found orphan containers ([postgres current-app-1 current-database-1 current-dbadmin-1]) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up."
+ Container current-db-1  Running
+ Container current-node-1  Running
+Attaching to current-db-1, current-node-1

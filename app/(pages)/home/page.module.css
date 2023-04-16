@@ -1,0 +1,28 @@
+.homepage {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 4px;
+    padding-top: 0;
+    background-color: antiquewhite;
+}
+
+.homepage h1 {
+    font-family: "Delicious Handrawn";
+    font-size: 4.5em;
+    padding: 0;
+    margin: 0;
+    margin-right: 6px;
+    float: left;
+}
+
+.homepage p {
+    font-size: 1.1em;
+    font-family: "EagleSpCGA_Alt2-2y", monospace;
+    padding: 0;
+    margin: 0;
+}
+
+.homepage img {
+    image-rendering: auto;
+}
